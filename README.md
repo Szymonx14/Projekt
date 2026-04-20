@@ -1,26 +1,43 @@
-  E  FATAL EXCEPTION: main
-                                                                                                    Process: com.example.workouttracker, PID: 14217
-                                                                                                    android.content.ActivityNotFoundException: Unable to find explicit activity class {com.example.workouttracker/com.example.workouttracker.activities.AddWorkoutActivity}; have you declared this activity in your AndroidManifest.xml, or does your intent not match its declared <intent-filter>?
-                                                                                                    	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2423)
-                                                                                                    	at android.app.Instrumentation.execStartActivity(Instrumentation.java:2000)
-                                                                                                    	at android.app.Activity.startActivityForResult(Activity.java:5997)
-                                                                                                    	at androidx.activity.ComponentActivity.startActivityForResult(ComponentActivity.kt:707)
-                                                                                                    	at android.app.Activity.startActivityForResult(Activity.java:5954)
-                                                                                                    	at androidx.activity.ComponentActivity.startActivityForResult(ComponentActivity.kt:692)
-                                                                                                    	at android.app.Activity.startActivity(Activity.java:6457)
-                                                                                                    	at android.app.Activity.startActivity(Activity.java:6424)
-                                                                                                    	at com.example.workouttracker.MainActivity.lambda$onCreate$0$com-example-workouttracker-MainActivity(MainActivity.java:47)
-                                                                                                    	at com.example.workouttracker.MainActivity$$ExternalSyntheticLambda0.onClick(D8$$SyntheticClass:0)
-                                                                                                    	at android.view.View.performClick(View.java:8083)
-                                                                                                    	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1345)
-                                                                                                    	at android.view.View.performClickInternal(View.java:8060)
-                                                                                                    	at android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0)
-                                                                                                    	at android.view.View$PerformClick.run(View.java:31549)
-                                                                                                    	at android.os.Handler.handleCallback(Handler.java:995)
-                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:103)
-                                                                                                    	at android.os.Looper.loopOnce(Looper.java:248)
-                                                                                                    	at android.os.Looper.loop(Looper.java:338)
-                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:9067)
-                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
-                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)
-                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:932)
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Workout Tracker"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WorkoutTracker">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.AddWorkoutActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".activities.WorkoutListActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".activities.WorkoutDetailActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".activities.AddExerciseActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".activities.StatsActivity"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>
