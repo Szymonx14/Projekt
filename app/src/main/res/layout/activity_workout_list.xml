@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:background="@color/background">
 
-    <!-- HEADER -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -23,7 +22,6 @@
 
     </LinearLayout>
 
-    <!-- PUSTA LISTA -->
     <TextView
         android:id="@+id/tvEmpty"
         android:layout_width="match_parent"
@@ -35,7 +33,6 @@
         android:padding="32dp"
         android:visibility="gone"/>
 
-    <!-- LISTA -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerWorkouts"
         android:layout_width="match_parent"

@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- HEADER -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -37,7 +36,6 @@
 
         </LinearLayout>
 
-        <!-- STATYSTYKI -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -45,7 +43,6 @@
             android:padding="16dp"
             android:weightSum="3">
 
-            <!-- Karta 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -81,7 +78,6 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Karta 2 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -117,7 +113,6 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Karta 3 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -155,7 +150,6 @@
 
         </LinearLayout>
 
-        <!-- PRZYCISKI -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

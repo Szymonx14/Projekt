@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:background="@color/background">
 
-    <!-- HEADER -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -24,7 +23,6 @@
 
     </LinearLayout>
 
-    <!-- INFO O TRENINGU -->
     <androidx.cardview.widget.CardView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
@@ -130,7 +128,6 @@
 
     </androidx.cardview.widget.CardView>
 
-    <!-- NAGLOWEK CWICZEN -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -156,7 +153,6 @@
 
     </LinearLayout>
 
-    <!-- PUSTA LISTA CWICZEN -->
     <TextView
         android:id="@+id/tvEmptyExercises"
         android:layout_width="match_parent"
@@ -167,7 +163,6 @@
         android:padding="16dp"
         android:visibility="gone"/>
 
-    <!-- LISTA CWICZEN -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerExercises"
         android:layout_width="match_parent"

@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         workoutDAO = new WorkoutDAO(this);
 
-        // Podpięcie widoków
+
         tvDate = findViewById(R.id.tvDate);
         tvTotalWorkouts = findViewById(R.id.tvTotalWorkouts);
         tvWeekWorkouts = findViewById(R.id.tvWeekWorkouts);
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         SimpleDateFormat sdf = new SimpleDateFormat("EEEE, d MMMM", new Locale("pl", "PL"));
         tvDate.setText(sdf.format(new Date()));
 
-        // Przyciski
+
         btnAddWorkout.setOnClickListener(v -> {
             Intent intent = new Intent(this, AddWorkoutActivity.class);
             startActivity(intent);

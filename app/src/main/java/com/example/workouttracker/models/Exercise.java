@@ -18,7 +18,7 @@ public class Exercise {
         this.weight = weight;
     }
 
-    // Gettery
+
     public int getId() { return id; }
     public int getWorkoutId() { return workoutId; }
     public String getName() { return name; }
@@ -26,7 +26,7 @@ public class Exercise {
     public int getReps() { return reps; }
     public double getWeight() { return weight; }
 
-    // Settery
+
     public void setId(int id) { this.id = id; }
     public void setWorkoutId(int workoutId) { this.workoutId = workoutId; }
     public void setName(String name) { this.name = name; }

@@ -27,7 +27,7 @@ public class AddExerciseActivity extends AppCompatActivity {
         // Pobranie ID treningu z poprzedniego ekranu
         workoutId = getIntent().getIntExtra("workout_id", -1);
 
-        // Podpięcie widoków
+
         etExerciseName = findViewById(R.id.etExerciseName);
         etSets = findViewById(R.id.etSets);
         etReps = findViewById(R.id.etReps);
@@ -43,7 +43,7 @@ public class AddExerciseActivity extends AppCompatActivity {
         String repsStr = etReps.getText().toString().trim();
         String weightStr = etWeight.getText().toString().trim();
 
-        // Walidacja
+
         if (name.isEmpty()) {
             etExerciseName.setError("Podaj nazwę ćwiczenia");
             return;

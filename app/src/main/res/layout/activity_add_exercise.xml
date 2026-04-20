@@ -10,7 +10,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- HEADER -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
@@ -29,7 +28,6 @@
 
         </LinearLayout>
 
-        <!-- NAZWA -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,7 +45,6 @@
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
 
-        <!-- SERIE -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,7 +63,6 @@
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
 
-        <!-- POWTORZENIA -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,7 +81,6 @@
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
 
-        <!-- CIEZAR -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,7 +99,6 @@
             android:padding="12dp"
             android:layout_marginBottom="24dp"/>
 
-        <!-- PRZYCISK -->
         <Button
             android:id="@+id/btnSaveExercise"
             android:layout_width="match_parent"

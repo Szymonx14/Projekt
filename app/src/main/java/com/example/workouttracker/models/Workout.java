@@ -19,7 +19,7 @@ public class Workout {
         this.notes = notes;
     }
 
-    // Gettery
+
     public int getId() {
         return id;
     }
@@ -44,7 +44,7 @@ public class Workout {
         return notes;
     }
 
-    // Settery
+
     public void setId(int id) {
         this.id = id;
     }

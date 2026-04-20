@@ -29,7 +29,6 @@ public class AddWorkoutActivity extends AppCompatActivity {
 
         workoutDAO = new WorkoutDAO(this);
 
-        // Podpięcie widoków
         etWorkoutName = findViewById(R.id.etWorkoutName);
         etDate = findViewById(R.id.etDate);
         etDuration = findViewById(R.id.etDuration);
@@ -59,7 +58,7 @@ public class AddWorkoutActivity extends AppCompatActivity {
             datePicker.show();
         });
 
-        // Zapisanie treningu
+
         btnSaveWorkout.setOnClickListener(v -> saveWorkout());
     }
 
@@ -70,7 +69,6 @@ public class AddWorkoutActivity extends AppCompatActivity {
         String notes = etNotes.getText().toString().trim();
         String type = spinnerType.getSelectedItem().toString();
 
-        // Walidacja
         if (name.isEmpty()) {
             etWorkoutName.setError("Podaj nazwę treningu");
             return;
@@ -92,6 +90,6 @@ public class AddWorkoutActivity extends AppCompatActivity {
         workoutDAO.close();
 
         Toast.makeText(this, "Trening zapisany!", Toast.LENGTH_SHORT).show();
-        finish(); // Powrót do poprzedniego ekranu
+        finish();
     }
 }

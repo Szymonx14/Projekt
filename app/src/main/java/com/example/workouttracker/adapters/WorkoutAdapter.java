@@ -48,7 +48,7 @@ public class WorkoutAdapter extends RecyclerView.Adapter<WorkoutAdapter.WorkoutV
         holder.tvWorkoutDate.setText(workout.getDate());
         holder.tvWorkoutDuration.setText(workout.getDuration() + " min");
 
-        // Kolor paska zależny od typu treningu
+
         switch (workout.getType()) {
             case "Cardio":
                 holder.viewTypeColor.setBackgroundColor(Color.parseColor("#4CAF50"));

@@ -23,7 +23,6 @@ public class StatsActivity extends AppCompatActivity {
 
         workoutDAO = new WorkoutDAO(this);
 
-        // Podpięcie widoków
         tvStatTotalWorkouts = findViewById(R.id.tvStatTotalWorkouts);
         tvStatWeekWorkouts = findViewById(R.id.tvStatWeekWorkouts);
         tvStatTotalTime = findViewById(R.id.tvStatTotalTime);
